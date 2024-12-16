@@ -34,9 +34,9 @@ namespace IssNow
             IssPositionResponse result = await client.GetIssPositionAsync();
 
             LatitudeText.Text = result.Position.LatitudeAbsolute
-                + " " + result.Position.LatitudeDirection;
+                + " " +  result.Position.LatitudeDirection;
             LongitudeText.Text= result.Position.LongitudeAbsolute
-                + " " + result.Position.LongitudeDirection;
+                + " " +  result.Position.LongitudeDirection;
 
         }
     }
